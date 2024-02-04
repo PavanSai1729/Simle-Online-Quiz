@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Application</title>
+        
+
+        <style>
+
+            .container {
+                background-color: skyblue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh; /* Optional: To make it centered vertically */
+             }
+             
+
+            .class1{
+                width: 15em;
+                border: 1px solid #333;
+                box-shadow: 8px 8px 5px #444;
+                padding: 8px 12px;
+                background-color: pink;
+            }
+           
+            .ps{
+                width: 15em;
+                padding: 8px 12px;
+            }
+        </style>
+
+    </head>
+
+    <body class="container">
+
+        <h1>Mathematics</h1>
+        <h2>Online-Quiz</h2>
+
+        <div class="class1">
+        Q1. What is 10-2 = ? <br/>
+        <input type="radio" name="question1">12<br/>
+        <input type="radio" name="question1" id="correct1">8<br/>
+        <input type="radio" name="question1">15<br/>
+        <input type="radio" name="question1">6<br/>
+        
+        </div>
+        <br/>
+        
+        <div class="class1">
+        Q2. What is 10+2 = ?<br/>
+        <input type="radio" name="question2" id="correct2">12<br/>
+        <input type="radio" name="question2">8<br/>
+        <input type="radio" name="question2">15<br/>
+        <input type="radio" name="question2">6<br/>
+        </div>
+        <br/>
+
+        <div class="class1">
+        Q3. What is 4+2 = ? <br/>
+        <input type="radio" name="question3">12<br/>
+        <input type="radio" name="question3">8<br/>
+        <input type="radio" name="question3">15<br/>
+        <input type="radio" name="question3" id="correct3">6<br/>
+        </div>
+        <br/>
+
+        <div class="class1">
+        Q4. What is 9+6 = ?<br/>
+        <input type="radio" name="question4">12<br/>
+        <input type="radio" name="question4">8<br/>
+        <input type="radio" name="question4" id="correct4">15<br/>
+        <input type="radio" name="question4">6<br/>
+        </div>
+        </body>
+        
+        <br/>
+
+        <div class="class1">
+        Q5. What is 9-3 = ?<br/>
+        <input type="radio" name="question5">12<br/>
+        <input type="radio" name="question5">8<br/>
+        <input type="radio" name="question5">15<br/>
+        <input type="radio" name="question5" id="correct5">6<br/>
+        </div>
+        <br/>
+
+        <div class="ps">
+        <center><input type="submit" name="submit" value="submit-Quiz" onclick="result()"></center>
+        </div>
+
+
+        <script type="text/javascript">
+
+            function result(){
+
+                var score=0;
+
+                if (document.getElementById("correct1").checked){
+                    score+=1;
+                }
+                if (document.getElementById("correct2").checked){
+                    score+=1;
+                }
+                if (document.getElementById("correct3").checked){
+                    score+=1;
+                }
+
+                document.write("Your Score is : "+score)
+            }
+
+        </script>
+
+
+
+
+
+
+    </body>
+</html>
